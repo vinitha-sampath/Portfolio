@@ -18,243 +18,264 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
-        /* Body and General Background */
+        /* Global styles */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #F1F3F4; /* Light Gray Background */
-            color: #34495E;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #F7F9FC; /* Soft Blue Background */
+            color: #333;
             margin: 0;
             padding: 0;
         }
 
         /* Header */
         #header {
-            background-color: #2980B9; /* Blue */
+            background-color: #1E2A47; /* Dark Blue */
             color: #FFFFFF;
-            padding: 40px 0;
+            padding: 60px 0;
             text-align: center;
         }
 
         #header #logo {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 3em;
+            font-weight: bold;
         }
 
         #header #logo h1 {
-            font-size: 2em;
+            font-size: 2.5em;
+            margin-bottom: 15px;
         }
 
         #header nav a {
             color: #ECF0F1;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
             font-weight: bold;
             font-size: 1.1em;
+            transition: all 0.3s ease;
         }
 
         #header nav a:hover {
             color: #F39C12; /* Yellow on hover */
-            transition: color 0.3s ease;
         }
 
-        /* Button Styles */
-        .button {
-            background-color: #E74C3C; /* Red */
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 1.1em;
-            text-align: center;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #C0392B; /* Darker Red */
-        }
-
-        /* Section Styles */
+        /* Section styles */
         section {
-            padding: 80px 0;
-            text-align: center;
-            background-color: #ffffff;
-            border-bottom: 1px solid #E4E4E4;
-        }
-
-        section h2 {
-            font-size: 2.5em;
-            color: #2980B9; /* Blue */
-        }
-
-        section p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            color: #7F8C8D;
-            margin-top: 15px;
-        }
-
-        /* Portfolio Section */
-        #portfolio {
-            background-color: #ECF0F1; /* Light Blue */
+            padding: 80px 20px;
+            margin: 0;
         }
 
         /* About Section */
         #about {
-            background-color: #ffffff;
+            background-color: #FFFFFF; /* White */
+            color: #2C3E50;
+            border-bottom: 2px solid #ECF0F1;
         }
 
-        /* Certificates Section */
+        #about h2 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        #about p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-top: 20px;
+            color: #7F8C8D;
+        }
+
+        /* Portfolio Section */
+        #portfolio {
+            background-color: #FFFCF5; /* Soft Cream */
+            color: #34495E;
+            text-align: center;
+        }
+
+        #portfolio h2 {
+            font-size: 2.5em;
+            color: #1E2A47;
+        }
+
+        #portfolio p {
+            font-size: 1.1em;
+            color: #7F8C8D;
+        }
+
+        /* Certificate Section */
         #certificates {
-            background-color: #F9F9F9; /* Light Gray */
+            background-color: #E8F5E9; /* Light Green */
+            text-align: center;
+            padding-bottom: 60px;
         }
 
-        /* Certificate Image */
-        #certificates .item img {
+        #certificates h2 {
+            font-size: 2.5em;
+            color: #388E3C; /* Green */
+        }
+
+        .certificate-card {
+            display: inline-block;
+            margin: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: #FFFFFF;
+            width: 200px;
             transition: transform 0.3s ease;
         }
 
-        #certificates .item img:hover {
-            transform: scale(1.05);
+        .certificate-card:hover {
+            transform: translateY(-10px);
         }
 
-        /* Navigation Links on Hover */
-        #header nav a:hover {
-            color: #F39C12; /* Yellow */
-            background-color: transparent;
+        .certificate-card img {
+            width: 100%;
+            border-bottom: 2px solid #388E3C;
+        }
+
+        .certificate-card h3 {
+            font-size: 1.2em;
+            color: #388E3C;
+            padding: 10px;
+            background-color: #F1F8E9;
+            text-align: center;
+        }
+
+        /* Button styles */
+        .button {
+            background-color: #1E2A47;
+            color: #FFFFFF;
+            padding: 12px 30px;
+            border: none;
             border-radius: 5px;
+            font-size: 1.1em;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #F39C12; /* Yellow */
         }
 
         /* Footer */
         #footer {
-            text-align: center;
-            padding: 25px;
-            background-color: #2C3E50; /* Dark Blue */
+            background-color: #1E2A47; /* Dark Blue */
             color: #ECF0F1;
+            text-align: center;
+            padding: 30px;
         }
 
         #footer a {
             color: #ECF0F1;
+            text-decoration: none;
         }
 
         #footer a:hover {
             color: #F39C12;
         }
+
+        /* Mobile styles */
+        @media only screen and (max-width: 768px) {
+            #header nav a {
+                font-size: 1em;
+            }
+
+            .certificate-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            #about p {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
-<body class="is-preload">
+<body>
 
 <!-- Header -->
 <div id="header">
-    <div class="top">
-        <!-- Logo -->
+    <div class="container">
         <div id="logo">
-            <span class="image avatar48"><img src="images/LOGO.png" alt="Vinitha Sampathkumar" /></span>
-            <h1 id="title">Vinitha Sampathkumar</h1>
+            <h1>Vinitha Sampathkumar</h1>
             <p>Data Analyst & Data Scientist</p>
         </div>
 
-        <!-- Nav -->
         <nav id="nav">
-            <ul>
-                <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-                <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-                <li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-                <li><a href="#certificates" id="certificates-link"><span class="icon solid fa-certificate">Certificates</span></a></li>
-            </ul>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#footer">Contact</a>
         </nav>
     </div>
 </div>
 
-<!-- Main -->
-<div id="main">
-    <!-- Intro -->
-    <section id="top" class="one dark cover">
-        <div class="container">
-            <header>
-                <h2 class="alt">Hi! I'm <strong>Vinitha</strong>, <br />
-                A Data Analyst who is passionate about <br /> analyzing data, creating visualizations, and solving complex problems</h2>
-            </header>
-            <footer>
-                <a href="#portfolio" class="button scrolly">Portfolio</a>
-            </footer>
-        </div>
-    </section>
+<!-- Main content -->
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="two">
-        <div class="container">
-            <header>
-                <h2>Portfolio</h2>
-            </header>
-            <p>A glimpse of the projects I've been working on</p>
-            <!-- Portfolio Items here -->
-        </div>
-    </section>
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm Vinitha, a passionate Data Analyst with 2 years of experience in analyzing data, creating impactful visualizations, and solving complex business problems. I specialize in transforming raw data into actionable insights using various analytical tools and programming languages. Outside of work, I enjoy cooking, traveling, and binge-watching Netflix shows.</p>
+        <a href="path_to_your_resume/resume.pdf" class="button" download>Download Resume</a>
+    </div>
+</section>
 
-    <!-- About Me -->
-    <section id="about" class="three">
-        <div class="container">
-            <header>
-                <h2>About Me</h2>
-            </header>
-            <p>Hi there! I'm Vinitha, a passionate Data Analyst with 2 years of experience. With a background in business administration, I specialize in providing actionable insights. When I'm not working, you can find me binging on Netflix and experimenting with new recipes in the kitchen.</p>
-            <!-- Resume Download Button -->
-            <a href="path_to_your_resume/resume.pdf" download class="button">Download Resume</a>
-        </div>
-    </section>
+<!-- Portfolio Section -->
+<section id="portfolio">
+    <div class="container">
+        <h2>Portfolio</h2>
+        <p>Here are some of the key projects I’ve worked on:</p>
 
-    <!-- Certificates Section -->
-    <section id="certificates" class="four">
-        <div class="container">
-            <header>
-                <h2>Certificates</h2>
-            </header>
-            <p>Here are some of the certificates I've earned:</p>
-            <!-- Displaying certificates as images -->
-            <div class="row">
-                <div class="col-6 col-14-mobile">
-                    <article class="item">
-                        <a href="path_to_your_certificate/certificate1.pdf" target="_blank" class="image fit">
-                            <img src="images/certificate1.jpg" alt="Certificate 1 - Data Science" width="128" height="260"/>
-                        </a>
-                        <header>
-                            <h3>Certificate 1 - Data Science</h3>
-                        </header>
-                    </article>
+        <!-- Project Examples (Add your portfolio projects here) -->
+        <div class="row">
+            <div class="col-4">
+                <div class="project-card">
+                    <h3>Project 1: Investment Recommendation System</h3>
+                    <p>A system to recommend personalized investments based on financial data and goals.</p>
                 </div>
-                <div class="col-6 col-14-mobile">
-                    <article class="item">
-                        <a href="path_to_your_certificate/certificate2.pdf" target="_blank" class="image fit">
-                            <img src="images/certificate2.jpg" alt="Certificate 2 - Machine Learning" width="128" height="260"/>
-                        </a>
-                        <header>
-                            <h3>Certificate 2 - Machine Learning</h3>
-                        </header>
-                    </article>
+            </div>
+            <div class="col-4">
+                <div class="project-card">
+                    <h3>Project 2: Sales Data Analytics</h3>
+                    <p>Analyzing sales data to find trends, optimize processes, and improve profitability.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="project-card">
+                    <h3>Project 3: NLP Text Classification</h3>
+                    <p>A text classification model to categorize customer reviews and feedback.</p>
                 </div>
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
+
+<!-- Certificates Section -->
+<section id="certificates">
+    <div class="container">
+        <h2>My Certificates</h2>
+        <p>Here are a few certifications that I have earned:</p>
+        <div class="certificate-card">
+            <img src="images/certificate1.jpg" alt="Certificate 1">
+            <h3>Data Science with Python</h3>
+        </div>
+        <div class="certificate-card">
+            <img src="images/certificate2.jpg" alt="Certificate 2">
+            <h3>Machine Learning Specialist</h3>
+        </div>
+    </div>
+</section>
 
 <!-- Footer -->
 <div id="footer">
-    <ul class="copyright">
-        <li>&copy; 2024 Vinitha Sampathkumar. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-    </ul>
+    <p>&copy; 2024 Vinitha Sampathkumar. All Rights Reserved.</p>
+    <p>Designed by <a href="https://www.vinithasampathkumar.com">Vinitha Sampathkumar</a></p>
 </div>
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
 </body>
