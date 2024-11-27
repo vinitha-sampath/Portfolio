@@ -21,7 +21,7 @@
         /* Body and General Background */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #F4F6F7;
+            background-color: #F1F3F4; /* Light Gray Background */
             color: #34495E;
             margin: 0;
             padding: 0;
@@ -29,59 +29,75 @@
 
         /* Header */
         #header {
-            background-color: #2C3E50;
+            background-color: #2980B9; /* Blue */
             color: #FFFFFF;
-            padding: 20px 0;
+            padding: 40px 0;
             text-align: center;
         }
 
         #header #logo {
-            font-size: 2em;
+            font-size: 2.5em;
             margin-bottom: 10px;
         }
 
         #header #logo h1 {
-            font-size: 1.5em;
+            font-size: 2em;
         }
 
         #header nav a {
-            color: #E74C3C;
+            color: #ECF0F1;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
+            font-size: 1.1em;
         }
 
         #header nav a:hover {
-            color: #FFFFFF;
+            color: #F39C12; /* Yellow on hover */
+            transition: color 0.3s ease;
         }
 
         /* Button Styles */
         .button {
-            background-color: #4CAF50;
+            background-color: #E74C3C; /* Red */
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             border: none;
             cursor: pointer;
             border-radius: 5px;
+            font-size: 1.1em;
             text-align: center;
             text-decoration: none;
+            transition: background-color 0.3s ease;
         }
 
         .button:hover {
-            background-color: #45a049;
+            background-color: #C0392B; /* Darker Red */
         }
 
         /* Section Styles */
         section {
-            padding: 60px 0;
+            padding: 80px 0;
             text-align: center;
             background-color: #ffffff;
-            border-bottom: 2px solid #E4E4E4;
+            border-bottom: 1px solid #E4E4E4;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: #2980B9; /* Blue */
+        }
+
+        section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #7F8C8D;
+            margin-top: 15px;
         }
 
         /* Portfolio Section */
         #portfolio {
-            background-color: #ECF0F1;
+            background-color: #ECF0F1; /* Light Blue */
         }
 
         /* About Section */
@@ -91,21 +107,13 @@
 
         /* Certificates Section */
         #certificates {
-            background-color: #ffffff;
-        }
-
-        /* Footer */
-        #footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #2C3E50;
-            color: #FFFFFF;
+            background-color: #F9F9F9; /* Light Gray */
         }
 
         /* Certificate Image */
         #certificates .item img {
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
 
@@ -115,9 +123,25 @@
 
         /* Navigation Links on Hover */
         #header nav a:hover {
-            color: #FFFFFF;
-            background-color: #E74C3C;
+            color: #F39C12; /* Yellow */
+            background-color: transparent;
             border-radius: 5px;
+        }
+
+        /* Footer */
+        #footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #2C3E50; /* Dark Blue */
+            color: #ECF0F1;
+        }
+
+        #footer a {
+            color: #ECF0F1;
+        }
+
+        #footer a:hover {
+            color: #F39C12;
         }
     </style>
 </head>
@@ -130,7 +154,7 @@
         <div id="logo">
             <span class="image avatar48"><img src="images/LOGO.png" alt="Vinitha Sampathkumar" /></span>
             <h1 id="title">Vinitha Sampathkumar</h1>
-            <p>Data Analyst</p>
+            <p>Data Analyst & Data Scientist</p>
         </div>
 
         <!-- Nav -->
