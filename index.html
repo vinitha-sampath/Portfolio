@@ -1,212 +1,237 @@
 <!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<meta charset="UTF-8">
-    		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    		<title>Vinitha Sampath Portfolio</title>
-    
-    		<!-- Apple Touch Icon -->
-    		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    
-    		<!-- Favicon Icons -->
-    		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    
-    		<!-- Web App Manifest -->
-    		<link rel="manifest" href="/site.webmanifest">
-    
-    		<!-- Stylesheet -->
- 		<link rel="stylesheet" href="assets/css/main.css">
-	</head>
-	<body class="is-preload">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Vinitha Sampathkumar | Portfolio</title>
 
-		<!-- Header -->
-			<div id="header">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
-				<div class="top">
+    <!-- Favicon Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/LOGO.png" alt="" /></span>
-							<h1 id="title">Vinitha </h1>
-							<h1 id="title">Sampathkumar</h1><br />
-							<p>Data Analyst</p>
-						</div>
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/site.webmanifest">
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-							</ul>
-						</nav>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* Body and General Background */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F4F6F7;
+            color: #34495E;
+            margin: 0;
+            padding: 0;
+        }
 
-				</div>
+        /* Header */
+        #header {
+            background-color: #2C3E50;
+            color: #FFFFFF;
+            padding: 20px 0;
+            text-align: center;
+        }
 
-				<div class="bottom">
+        #header #logo {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/vinitha-1997/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/vinitha-sampath" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://public.tableau.com/app/profile/vinitha.sampathkumar/vizzes" target="_blank" class="image fit"><img src="images/Tableau1.png" alt="" width="20" height="35"</a></li>
-						</ul>
+        #header #logo h1 {
+            font-size: 1.5em;
+        }
 
-				</div>
+        #header nav a {
+            color: #E74C3C;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
 
-			</div>
+        #header nav a:hover {
+            color: #FFFFFF;
+        }
 
-		<!-- Main -->
-			<div id="main">
+        /* Button Styles */
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+        }
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+        .button:hover {
+            background-color: #45a049;
+        }
 
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Vinitha</strong>, <br />
-								 A Data analyst who finds great passion in <br /> analyzing data, creating visualization and problem solving</a> .</h2>
-								
-							</header>
+        /* Section Styles */
+        section {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #ffffff;
+            border-bottom: 2px solid #E4E4E4;
+        }
 
-							<footer>
-								<a href="#portfolio" class="button scrolly">Portfolio</a>
-							</footer>
+        /* Portfolio Section */
+        #portfolio {
+            background-color: #ECF0F1;
+        }
 
-						</div>
-					</section>
+        /* About Section */
+        #about {
+            background-color: #ffffff;
+        }
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
+        /* Certificates Section */
+        #certificates {
+            background-color: #ffffff;
+        }
 
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-							
+        /* Footer */
+        #footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2C3E50;
+            color: #FFFFFF;
+        }
 
-							<p>A glimpse of the projects I've been working on</p>
+        /* Certificate Image */
+        #certificates .item img {
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
 
-							<div class="row">
-								
-								<div class="col-6 col-14-mobile">
-									<article class="item">
-										<a href="https://youtu.be/IhkaMlWxkGY" target="_blank" class="image fit"><img src="images/invest.jpg" alt="" width="128" height="260"/></a>
-										<header>
-											<h3>Investment Recommendation System  - Python </h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/vinitha-sampath/Global-AI-Index-Unsupervised-and-Supervised-Learning-Integration" class="image fit"><img src="images/ai.jpg" alt="" width="128" height="260" /></a>
-										<header>
-											<h3>Global AI Index-Unsupervised and Supervised Learning Integration</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://public.tableau.com/app/profile/vinitha.sampathkumar/viz/SampleSales_17164612151130/SalesDashboard" target="_blank" class="image fit"><img src="images/salesreport.png" alt="" width="128" height="260"/></a>
-										<header>
-											<h3>Sample Sales analysis - Tableau</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/vinitha-sampath/PortfolioProjects/blob/main/COVID%20portfolio%20project.sql" target="_blank" class="image fit"><img src="images/covid.jpg" alt="" width="128" height="260" /></a>
-										<header>
-											<h3>Data cleaning - SQL</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://public.tableau.com/app/profile/vinitha.sampathkumar/viz/SydneyAirbnbAnalysis/Dashboard2" target="_blank" class="image fit"><img src="images/airbnb.jpg" alt="" width="128" height="260"/></a>
-										<header>
-											<h3>Sydney AirBnb analysis - Tableau</h3>
-										</header>
-									</article>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/load.jpg" alt="" width="128" height="260" /></a>
-										<header>
-											<h3>Idea generators are on standby!</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-6 col-14-mobile">
-									<article class="item">
-										<a href="https://github.com/vinitha-sampath/Bank_marketing_classification" target="_blank" class="image fit"><img src="images/Bank1.jpg" alt="" width="128" height="260"/></a>
-										<header>
-											<h3>Predicting Term Deposit Subscription  - Python </h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/vinitha-sampath/DiamondPricePrediction_Regression" target="_blank" class="image fit"><img src="images/diamonds.jpg" alt="" width="128" height="260" /></a>
-										<header>
-											<h3>Diamond Price Prediction - Python</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://1drv.ms/x/c/e7382f9ff94902e0/EbTORhZ_9axHhQGQMtwqrboBrezXU7vUxFSpDDoPbt5tWQ?e=cR7Ki8" target="_blank" class="image fit"><img src="images/Coffee.jpg" alt="" width="128" height="260" /></a>
-										<header>
-											<h3>Coffee Sales Analysis - Excel</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="Student Analysis powerbi.pdf" target="_blank" class="image fit"><img src="images/Student.jpg" alt="" width="128" height="260"  /></a>
-										<header>
-											<h3>International Student and Visa Analysis - PowerBI</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://public.tableau.com/app/profile/vinitha.sampathkumar/viz/Book1_17146348203810/Story1" target="_blank"  class="image fit"><img src="images/Data Scientist analysis.webp" alt="" width="128" height="260" /></a>
-										<header>
-											<h3>Data scientist job analysis in Australia - Tableau</h3>
-										</header>
-								</div>
-							</div>
+        #certificates .item img:hover {
+            transform: scale(1.05);
+        }
 
-						</div>
-					</section>
+        /* Navigation Links on Hover */
+        #header nav a:hover {
+            color: #FFFFFF;
+            background-color: #E74C3C;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body class="is-preload">
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+<!-- Header -->
+<div id="header">
+    <div class="top">
+        <!-- Logo -->
+        <div id="logo">
+            <span class="image avatar48"><img src="images/LOGO.png" alt="Vinitha Sampathkumar" /></span>
+            <h1 id="title">Vinitha Sampathkumar</h1>
+            <p>Data Analyst</p>
+        </div>
 
-							<header>
-								<h2>About Me</h2>
-							</header>
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+                <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+                <li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+                <li><a href="#certificates" id="certificates-link"><span class="icon solid fa-certificate">Certificates</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
 
-							<a href="#" class="fit-container"></a>
+<!-- Main -->
+<div id="main">
+    <!-- Intro -->
+    <section id="top" class="one dark cover">
+        <div class="container">
+            <header>
+                <h2 class="alt">Hi! I'm <strong>Vinitha</strong>, <br />
+                A Data Analyst who is passionate about <br /> analyzing data, creating visualizations, and solving complex problems</h2>
+            </header>
+            <footer>
+                <a href="#portfolio" class="button scrolly">Portfolio</a>
+            </footer>
+        </div>
+    </section>
 
-							<p>Hi there! I'm Vinitha, a passionate Data Analyst with 2 years of experience. With a background in business administration, I specialize in providing insights. My mission is to leverage data as a catalyst for growth. When I'm not working, you can find me binging on Netflix and cooking. Let's connect and collaborate to analyse data.</p>
+    <!-- Portfolio -->
+    <section id="portfolio" class="two">
+        <div class="container">
+            <header>
+                <h2>Portfolio</h2>
+            </header>
+            <p>A glimpse of the projects I've been working on</p>
+            <!-- Portfolio Items here -->
+        </div>
+    </section>
 
-						</div>
-					</section>
+    <!-- About Me -->
+    <section id="about" class="three">
+        <div class="container">
+            <header>
+                <h2>About Me</h2>
+            </header>
+            <p>Hi there! I'm Vinitha, a passionate Data Analyst with 2 years of experience. With a background in business administration, I specialize in providing actionable insights. When I'm not working, you can find me binging on Netflix and experimenting with new recipes in the kitchen.</p>
+            <!-- Resume Download Button -->
+            <a href="path_to_your_resume/resume.pdf" download class="button">Download Resume</a>
+        </div>
+    </section>
 
-				
+    <!-- Certificates Section -->
+    <section id="certificates" class="four">
+        <div class="container">
+            <header>
+                <h2>Certificates</h2>
+            </header>
+            <p>Here are some of the certificates I've earned:</p>
+            <!-- Displaying certificates as images -->
+            <div class="row">
+                <div class="col-6 col-14-mobile">
+                    <article class="item">
+                        <a href="path_to_your_certificate/certificate1.pdf" target="_blank" class="image fit">
+                            <img src="images/certificate1.jpg" alt="Certificate 1 - Data Science" width="128" height="260"/>
+                        </a>
+                        <header>
+                            <h3>Certificate 1 - Data Science</h3>
+                        </header>
+                    </article>
+                </div>
+                <div class="col-6 col-14-mobile">
+                    <article class="item">
+                        <a href="path_to_your_certificate/certificate2.pdf" target="_blank" class="image fit">
+                            <img src="images/certificate2.jpg" alt="Certificate 2 - Machine Learning" width="128" height="260"/>
+                        </a>
+                        <header>
+                            <h3>Certificate 2 - Machine Learning</h3>
+                        </header>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
-			</div>
+<!-- Footer -->
+<div id="footer">
+    <ul class="copyright">
+        <li>&copy; 2024 Vinitha Sampathkumar. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+</div>
 
-		<!-- Footer -->
-			<div id="footer">
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
