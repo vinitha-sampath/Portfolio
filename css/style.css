@@ -33,7 +33,7 @@ h6,
 }
 
 .site-section {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 .filters a {
@@ -411,6 +411,8 @@ h6,
 
 .custom-navbar {
   padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 100%;
 }
 
@@ -533,7 +535,7 @@ h6,
 
 @media (max-width: 780px) {
   .custom-navbar > .container {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
