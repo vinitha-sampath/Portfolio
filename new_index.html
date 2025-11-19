@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vinitha Sampathkumar — Portfolio</title>
+  <meta name="description" content="Portfolio of Vinitha Sampathkumar — Data Analyst / Data Scientist">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap (keeps your existing vendor files if present) -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Optional vendor icons / animations -->
+  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Page styles (kept inline for a single-file deliverable) -->
+  <style>
+    :root{
+      --accent:#0b5ed7;
+      --muted:#6c757d;
+      --card-radius:12px;
+    }
+
+    body{
+      font-family: 'Raleway', Arial, sans-serif;
+      color:#10243a;
+      background:#fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* NAV */
+    .navbar-brand{ font-weight:700; letter-spacing:0.2px }
+    .site-navbar-target{ box-shadow: 0 2px 8px rgba(11,30,50,0.04) }
+
+    main{ padding-top:86px; }
+
+    /* HERO */
+    .hero{ padding:56px 0 }
+    .hero .subheading{ color:var(--muted); font-weight:600 }
+    .hero h1{ font-size:34px; margin-top:6px }
+
+    /* Projects grid */
+    .site-section{ padding:56px 0 }
+    #filters{ display:flex; gap:18px; align-items:center; flex-wrap:wrap }
+    #filters a{ color:var(--muted); text-decoration:none; font-weight:600; padding-bottom:6px }
+    #filters a.active{ color:var(--accent); border-bottom:2px solid var(--accent) }
+
+    .item-wrap{ display:block; position:relative; border-radius:var(--card-radius); overflow:hidden; background:#fff; transition:transform .25s ease, box-shadow .25s ease }
+    .item-wrap:hover{ transform:translateY(-6px); box-shadow:0 10px 30px rgba(16,36,58,0.12) }
+
+    .item .work-info{ padding:14px 16px }
+    .item h3{ margin:0 0 6px; font-size:18px }
+    .item span{ color:var(--muted); font-size:13px }
+
+    .item img{ width:100%; height:200px; object-fit:cover; display:block }
+
+    /* Make all project images same height on larger screens */
+    @media(min-width:992px){ .item img{ height:220px } }
+
+    /* Certifications */
+    .cert-img{ width:100%; max-height:220px; object-fit:contain; border-radius:10px; box-shadow: 0 6px 18px rgba(11,30,50,0.08); background: #fff; padding:10px }
+
+    /* About & skills adjustments */
+    .progress.custom-progress{ height:10px; background:rgba(16,36,58,0.06); border-radius:8px; overflow:hidden }
+    .progress-bar{ background:var(--accent) }
+
+    /* Footer */
+    .footer{ background:#fbfdff; padding:28px 0; border-top:1px solid rgba(16,36,58,0.04) }
+
+    /* Small screens adjustments */
+    @media (max-width:575px){
+      .hero h1{ font-size:26px }
+      .item img{ height:160px }
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top site-navbar-target">
+    <div class="container">
+      <a class="navbar-brand" href="#">Vinitha Sampathkumar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certs">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT (single <main>) -->
+  <main id="main">
+
+    <!-- HERO / HOME -->
+    <section id="home" class="site-section hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7" data-aos="fade-up">
+            <span class="subheading d-block">Hello!</span>
+            <h1>I'm <strong>Vinitha Sampathkumar</strong></h1>
+            <p class="lead">Data Analyst | Data Scientist — I turn data into actionable insights using Python, SQL and BI tools.</p>
+          </div>
+          <div class="col-md-5 text-center" data-aos="fade-up">
+            <img src="img/person_1_sq.png" alt="Vinitha" style="max-width:220px; border-radius:50%">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p>I am a passionate Data Analyst with a background in business administration and 2 years of hands-on experience. I specialise in data cleaning, visualization and building end-to-end analytics solutions. Outside of work I enjoy painting and outdoor walks.</p>
+
+            <h3 class="mt-4">Expertise</h3>
+            <ul class="mb-3">
+              <li>Python, SQL</li>
+              <li>Power BI, Tableau, Excel</li>
+              <li>Data Visualization, ETL, Statistical Analysis</li>
+            </ul>
+          </div>
+
+          <div class="col-md-5" data-aos="fade-up">
+            <h3>Skills</h3>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <div class="d-flex mb-1"><strong>Data Visualization</strong><span class="ml-auto">95%</span></div>
+                <div class="progress custom-progress"><div class="progress-bar" role="progressbar" style="width:95%"></div></div>
+              </li>
+
+              <li class="mb-3">
+                <div class="d-flex mb-1"><strong>SQL</strong><span class="ml-auto">85%</span></div>
+                <div class="progress custom-progress"><div class="progress-bar" role="progressbar" style="width:85%"></div></div>
+              </li>
+
+              <li class="mb-3">
+                <div class="d-flex mb-1"><strong>Python</strong><span class="ml-auto">75%</span></div>
+                <div class="progress custom-progress"><div class="progress-bar" role="progressbar" style="width:75%"></div></div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="site-section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-6" data-aos="fade-up"><h2>My Projects</h2></div>
+          <div class="col-md-6 text-md-right" data-aos="fade-up">
+            <nav id="filters" aria-label="Project filters" class="filters">
+              <a href="#" class="active" data-filter="*">All</a>
+              <a href="#" data-filter=".aws_services">AWS</a>
+              <a href="#" data-filter=".bi-tools">BI-tools</a>
+              <a href="#" data-filter=".python">Python</a>
+              <a href="#" data-filter=".sql">SQL</a>
+            </nav>
+          </div>
+        </div>
+
+        <div id="portfolio-grid" class="row">
+
+          <!-- project card (repeatable) -->
+          <div class="col-sm-6 col-md-4 mb-4 item aws_services">
+            <a class="item-wrap" href="https://github.com/vinitha-sampath/AWS-Data-Engineering.git" target="_blank" rel="noopener">
+              <img class="project-img" src="img/aws.jpg" alt="Weather Data Pipeline (AWS + Snowflake)">
+              <div class="work-info">
+                <h3>Weather Data Pipeline (AWS + Snowflake)</h3>
+                <span>AWS_Services</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-4 mb-4 item python">
+            <a class="item-wrap" href="https://github.com/vinitha-sampath/Investment_Recommendation" target="_blank" rel="noopener">
+              <img class="project-img" src="img/investment.jpg" alt="Investment Recommendations">
+              <div class="work-info">
+                <h3>Investment Recommendations</h3>
+                <span>Python</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-4 mb-4 item python">
+            <a class="item-wrap" href="https://github.com/vinitha-sampath/Bank_marketing_classification/blob/73e1aadb119e07aa21b40caa240ac8909b926caf/Bank_Marketing.ipynb" target="_blank" rel="noopener">
+              <img class="project-img" src="img/termdeposit.jpg" alt="Predicting Term Deposit Subscription">
+              <div class="work-info"><h3>Predicting Term Deposit Subscription</h3><span>Python</span></div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-4 mb-4 item python">
+            <a class="item-wrap" href="https://github.com/vinitha-sampath/DiamondPricePrediction_Regression/blob/6b308dc909ab95eb1e670a628b4a9b792f3ac05f/DiamondPricePrediction_Regression.ipynb" target="_blank" rel="noopener">
+              <img class="project-img" src="img/diamond.jpg" alt="Diamond Price Prediction">
+              <div class="work-info"><h3>Diamond Price Prediction</h3><span>Python</span></div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-4 mb-4 item bi-tools">
+            <a class="item-wrap" href="https://public.tableau.com/views/TheCloudRevolutionIterated/Iterated" target="_blank" rel="noopener">
+              <img class="project-img" src="img/cloud.jpg" alt="The Cloud Revolution">
+              <div class="work-info"><h3>The Cloud Revolution</h3><span>BI-tools</span></div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-4 mb-4 item bi-tools">
+            <a class="item-wrap" href="https://public.tableau.com/views/Book3_17404875873850/Dashboard1" target="_blank" rel="noopener">
+              <img class="project-img" src="img/Nepal.jpeg" alt="Nepal Heights">
+              <div class="work-info"><h3>The story of Nepal's heights</h3><span>BI-tools</span></div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-4 mb-4 item bi-tools">
+            <a class="item-wrap" href="https://public.tableau.com/views/SampleSales_17164612151130/SalesDashboard" target="_blank" rel="noopener">
+              <img class="project-img" src="img/SummerSale.png" alt="Sample Sales analysis">
+              <div class="work-info"><h3>Sample Sales analysis</h3><span>BI-tools</span></div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-4 mb-4 item bi-tools">
+            <a class="item-wrap" href="#" target="_blank" rel="noopener">
+              <img class="project-img" src="img/coffee.jpg" alt="Coffee Sales Analysis">
+              <div class="work-info"><h3>Coffee Sales Analysis</h3><span>BI-tools</span></div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-4 mb-4 item sql">
+            <a class="item-wrap" href="https://public.tableau.com/views/SampleSales_17164612151130/SalesDashboard" target="_blank" rel="noopener">
+              <img class="project-img" src="img/covid.jpg" alt="Covid - Data cleaning">
+              <div class="work-info"><h3>Covid - Data cleaning</h3><span>SQL</span></div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs" class="site-section">
+      <div class="container">
+        <div class="row mb-4"><div class="col-md-6"><h2>Certifications</h2></div></div>
+        <div class="row">
+          <div class="col-6 col-md-4 mb-4 text-center"><img class="cert-img" src="cert/UTS.png" alt="UTS"></div>
+          <div class="col-6 col-md-4 mb-4 text-center"><img class="cert-img" src="cert/IOD.png" alt="IOD"></div>
+          <div class="col-6 col-md-4 mb-4 text-center"><img class="cert-img" src="cert/Forage.png" alt="Forage"></div>
+          <div class="col-6 col-md-4 mb-4 text-center"><img class="cert-img" src="cert/PowerBI.png" alt="PowerBI"></div>
+          <div class="col-6 col-md-4 mb-4 text-center"><img class="cert-img" src="cert/Intermediate Python.png" alt="Intermediate Python"></div>
+          <div class="col-6 col-md-4 mb-4 text-center"><img class="cert-img" src="cert/Database and SQL.png" alt="Database and SQL"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <section id="contact" class="site-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6"><h3>Get in touch</h3>
+            <p>Email: <a href="mailto:vinithadata360@gmail.com">vinithadata360@gmail.com</a></p>
+            <p>Location: Sydney, NSW</p>
+            <p><a href="https://github.com/vinitha-sampath" target="_blank" rel="noopener">GitHub</a> • <a href="https://www.linkedin.com/in/vinitha-1997/" target="_blank" rel="noopener">LinkedIn</a></p>
+          </div>
+          <div class="col-md-6 text-md-right"><p class="mb-0">&copy; 2025 Vinitha Sampathkumar</p></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" aria-label="Site footer">
+    <div class="container text-center">
+      <small>Designed with ❤️ — BootstrapMade template adapted</small>
+    </div>
+  </footer>
+
+  <!-- Vendor JS (keeps your existing vendor files) -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+
+  <!-- Small script: accessible filter (no external isotope required) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const filters = document.querySelectorAll('#filters a');
+      const items = document.querySelectorAll('#portfolio-grid .item');
+
+      function applyFilter(filter){
+        items.forEach(i=>{
+          if(filter === '*' || i.classList.contains(filter.replace('.', ''))){
+            i.style.display = 'block';
+          } else {
+            i.style.display = 'none';
+          }
+        });
+      }
+
+      filters.forEach(f=>{
+        f.addEventListener('click', function(e){
+          e.preventDefault();
+          filters.forEach(x=>x.classList.remove('active'));
+          this.classList.add('active');
+          applyFilter(this.getAttribute('data-filter'));
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
